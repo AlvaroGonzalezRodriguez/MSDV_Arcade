@@ -20,14 +20,15 @@ alu0101202556
  create an animation blueprint that respond to the diferent variables from the blueprint and represent the correct animation.</p>
   
 ![Alt Text](GIFs/arcade4.png)
-<p>The enemy blueprint works along the enemy blackboard, so it has less behavours defined, it has the movement which is in the Y axis, the overlap with the bullet and it also changes some variables from the blackboard. In the image we can see the parto of the attack
+<p>The enemy blueprint works along the enemy blackboard, so it has less behavours defined, it has the movement which is in the Y axis, the overlap with the bullet and it also changes some variables from the blackboard. In the image we can see the part of the attack
  blueprint, it only activate when the enemy see the player, so is defined in the tree behaviour as a task. The bullet blueprint is very simple because it uses the projectile movement component and the collision with other objects is handle by other
  actors.</p>
  
 ![Alt Text](GIFs/arcade5.png)
-<p>The spawner works for all types of actors, so we can have easily have a spawner of health packs and a spawner of enemies using the same blueprint. The image represent how the health pack heal the player when it overlap with him</p>
+<p>The spawner works for all types of actors, so we can have easily have a spawner of health packs and a spawner of enemies using the same blueprint. The image represent how the health pack heal the player when it overlaps with him</p>
 
 ![Alt Text](GIFs/arcade6.png)
+
 <p>The game use a simple widget to represent the heath and the points that the player has as you can see in the execution. It has two custom event to put the variables from the player and the game mode, which is the one who store the points, in the widget,
  so we need to call them in the respectives bluprint.</p>
 <p>There are also some sounds and particles that appear when the player or the enemies do some actions and a background music. The sounds and particle are managed in the blueprint and not in the animator</p>
